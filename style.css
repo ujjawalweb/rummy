@@ -13,6 +13,13 @@ h5{font-size: 18px !important;}
 .heading{font-size: 18px;}
 marquee{font-size: 14px;color:#1a3960}
 
+#finance-btn:focus{border:none;outline:none}
+#refer-btn:focus{border:none;outline:none}
+
+#text{display: none;}
+
+p{text-align: justify;}
+
 .my-bg{background:#eee;}
 	p{font-size:15px;}
 
@@ -256,7 +263,7 @@ marquee{font-size: 14px;color:#1a3960}
 		}
 		.nav-tabs > li > a {
 			margin-right: 0px;
-			color:grey;
+			color:#000;
 		}
 		
 		
@@ -361,7 +368,7 @@ marquee{font-size: 14px;color:#1a3960}
 		/* active */
 		
 		.input:focus ~ .bar:before, .input:focus ~ .bar:after { width: 50%; }
-		
+		 ul li{z-index:1!important;}
 		
 		/* Highlight */
 		
@@ -375,6 +382,12 @@ marquee{font-size: 14px;color:#1a3960}
 			opacity: 0.5;
 		}
 		
+		.promo{    margin-left: 21px;
+			color: #fff;
+			margin-top: 23px;
+			position: relative;
+			top: 8px;
+		}
 		
 		/* active */
 		
@@ -394,6 +407,8 @@ marquee{font-size: 14px;color:#1a3960}
 		
 		@media screen and (min-width: 768px) {
 			
+			
+	
 			#myModal .modal-dialog  {width:500px;     position: absolute;
 				top: 50%;
 				left: 40%;
@@ -456,7 +471,9 @@ marquee{font-size: 14px;color:#1a3960}
 		}
 		input[type="checkbox"],
 		input[type="radio"] {
-			width: 1.25em; height: 1.25em;border: 1px solid #fff;
+			width: 1.25em; height: 1.25em;border: 1px solid #fff;position: relative;
+			position: relative;
+			top: 6px;
 		}	
 		input[type="radio"] {	
 			border-radius: 50%;
@@ -474,14 +491,85 @@ marquee{font-size: 14px;color:#1a3960}
 
         @media only screen and (max-width: 600px) {
 		.carousel-item img {
-			height: 230px;
+			height:355px;
 		}
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+			display: inline-block;
+			width: 20px;
+			display: none;
+			height: 20px;}
+
+
+			.input {
+				font-size: 18px;
+				padding: 10px 10px 10px 5px;
+				-webkit-appearance: none;
+				display: block;
+				background: none;
+				color: #636363;
+				width:49%;
+				border: none;
+				border-radius: 0;
+				border-bottom: 1px solid #757575;}
+
+
+				.modal {
+					position: fixed;
+					top: 0;
+					left: 0;
+					z-index: 1050;
+					/* width: 28px; */
+					display: none;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					outline: 0;
+					width: 351px;}
+
+
+					.btn-block {
+						margin-top: 20px;
+						margin-bottom: 20px;
+						font-size: 18px;
+						width: 155px;
+					}
+
+				.my-log{margin-left: -252px;}	
+				.my-sign{    margin-left: -238px;}
+
+				.nav-tabs{    line-height: 2;
+					display: contents;}
+		
+        #refer-btn {
+			width: 150px;
+			height: 50px;
+			background: #eab001;
+			border: 0;
+			display: inline-block;
+			color: #fff;
+			z-index:1;
+			position: relative;
+			top: -51px;}
+
+
+			#finance-btn{width: 150px;
+				height: 50px;
+				background: #eab001;
+				border: 0;
+				display: inline-block;
+				color: #fff;
+				z-index:1;
+				position: relative;
+    top: -1px;
+    left: 69px;}
+
+
 
 		.navbar-light .navbar-toggler {
 			color: rgba(0,0,0,.5);
 			border-color: rgba(0,0,0,.1);
 			position: relative;
-			top: -20px;
+			top: -29px;
 		}
 
 		.navbar-brand {
@@ -496,6 +584,21 @@ marquee{font-size: 14px;color:#1a3960}
 			top: -28px;
 		}
 
+
+		.navbar-light .navbar-toggler:focus{border: none;outline: none;}
+
 		.imgs{width:200px;}
 
+
+		.navbar-nav .nav-link {
+			padding-right: 25px;
+			padding-left: 22px;
+			height: 41px;
+			background: #385778;
+			margin-top: 0px;
+		}
+
 	}
+
+
+.fa-bars{font-size: 26px!important;}

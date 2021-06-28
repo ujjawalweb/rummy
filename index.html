@@ -25,7 +25,7 @@
         <div class="container">
         <a class="navbar-brand" href="#"><img src="images/01.png" width="120" height="120"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa fa-bars text-white"></i></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -117,9 +117,9 @@
 
 
 
-<div class="col-md-6 p-1 mt-3 bg-white"><p>"I am playing A23 rummy for the last 3 years. I enjoy playing rummy online & I won Rs. 1.16 lakhs.Thanks to Ace2Three! </p> <h6>Shubham - Maharashtra</h6></div>
+<div class="col-md-6 p-1 mt-3 bg-white p-3"><p>"I am playing A23 rummy for the last 3 years. I enjoy playing rummy online & I won Rs. 1.16 lakhs.Thanks to Ace2Three! </p> <h6>Shubham - Maharashtra</h6></div>
 
-<div class="col-md-6 p-1 mt-3 bg-white"><p>"I am very happy to play the rummy tourney on A23. The tournament pattern is excellent and the private table concept is at par. Keep it up, Ace2Three. </p><h6>Chirag - Gujarat</h6></div>
+<div class="col-md-6 p-1 mt-3 bg-white p-3"><p>"I am very happy to play the rummy tourney on A23. The tournament pattern is excellent and the private table concept is at par. Keep it up, Ace2Three. </p><h6>Chirag - Gujarat</h6></div>
 </div>
 </div>
 </div>
@@ -509,7 +509,7 @@
             <fieldset>
             <!-- Sign In Form -->
             <!-- Text input-->
-         <h5 class="text-white text-center"> LOGIN AND PLAY</h5>
+         <h5 class="text-white text-center my-log"> LOGIN AND PLAY</h5>
                <div class="group">
 <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
     <label class="label" for="date">Username</label></div>
@@ -522,7 +522,7 @@
     </div>
 <em>minimum 6 characters</em>
 
-<input type="checkbox" class=" mt-4" value="lsRememberMe" id="rememberMe"> <label for="rememberMe"  style="color:#fff;">Remember me</label>
+<input type="checkbox" class=" mt-4" value="lsRememberMe" id="rememberMe"> <label for="rememberMe"  style="color:#fff;position: relative;top:20px;">&nbsp;Remember me</label>
             
 
             <!-- Button -->
@@ -542,7 +542,7 @@
             <fieldset>
             <!-- Sign Up Form -->
             <!-- Text input-->
-            <h5 class="text-white text-center">  SIGNUP AND START WINNING</h5>
+            <h5 class="text-white text-center my-sign">  SIGNUP AND START WINNING</h5>
             <div class="group">
 <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
     <label class="label" for="date">Username</label></div>
@@ -557,8 +557,7 @@
 <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
     <label class="label" for="date">Confirm Password</label></div>
 
-    <label for="inputCity" class="text-white mt-4">Have a Promocode</label>
-    <input type="text" class="form-control" id="text" placeholder="Enter your Promocode">
+
             
 
   
@@ -569,7 +568,17 @@
 <input required="" class="input" type="email"><span class="highlight"></span><span class="bar"></span>
     <label class="label" for="date">Email</label></div>
               
-            
+    
+    <input class="form-check-input" type="checkbox" id="myCheck"  style="margin-left:1px;" onclick="myFunction()">
+			<label class="form-check-label  promo"  disabled for="gridCheck1">  
+				&nbsp;  Have a Promo Code?
+			</label>
+      <label for="inputCity"></label>
+			<input type="text" class="form-control mt-3" id="text" placeholder="Enter your Promocode" style="display:none;
+      width: 211px;
+  ">
+
+
     <li class="checkbox mt-5">
       <input type="checkbox" name="ch2" id="ch2" value="2">
       <label for="ch2" class="text-white">Checkbox with long text : Officia nisi velit officia esse amet anim. Qui quis cupidatat duis adipisicing pariatur cupidatat reprehenderit dolore eiusmod non adipisicing. Ullamco qui elit sint irure ut qui aliqua.</label>
@@ -659,9 +668,24 @@ $('#tab2').on('click' , function(){
 </script>
 
 
-<script>
-  
-</script>
+
+  	<script>
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+	
+  } else {
+    text.style.display = "none";
+  }
+}
+		</script>
+
       <!-- jQuery library -->
       <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
